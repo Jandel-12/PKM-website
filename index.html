@@ -9,19 +9,43 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <img src="img/304857703_469300268547168_673831584459838394_n.jpg">
-            <p><span>Pambayang</span> <br> Kolehiyo ng Mauban</p>
-        </div>
-    
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#admissions">Admissions</a>
-        <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <div class="logo">
+    <img src="img/304857703_469300268547168_673831584459838394_n.jpg" alt="PKM Logo" />
+    <p><span>Pambayang</span> <br> Kolehiyo ng Mauban</p>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" onclick="showSection('home')">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#home" class="dropbtn">About <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-content">
+        <li><a href="#history" onclick="showSection('history')">Brief History</a></li>
+        <li><a href="#structure">Organizational Structure</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#academics" class="dropbtn">Academics <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-content">
+        <li><a href="#programs">Academic Programs</a></li>
+        <li><a href="#projects">Projects & Activities</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Enrollment <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-content">
+        <li><a href="#admission">Admission Process</a></li>
+        <li><a href="#policies">Institutional Policies</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
    <section id="about" class="slideshow-container">
   <div class="slide fade">
@@ -41,7 +65,55 @@ Empower students, foster academic excellence, skill development, and values-base
 A higher educational institution that upholds academic excellence, skills, values and innovations responsive to the needs of the society. </div>
   </div>
 </section>
-    <section id="academics">...</section>
+
+    <section class="history" id="history">
+        <h1>BRIEF HISTORY OF PAMBAYANG KOLEHIYO NG MAUBAN</h1>
+        <p>College education has always been elusive for the Filipinos at large. Thus, it is an accepted maxim that education at least in the tertiary level, is a privilege and not a right.
+
+But with the establishment of the Pambayang Kolehiyo ng Mauban (PKM), college education is not an impossible dream anymore among the young people of Mauban. With its creation by the virtue of Sangguniang Bayan Ordinance No. 05, S-2005 all Maubanins state their rightful claim to quality education.
+
+It all started with the observation of Mayor Fernando Q. Llamas that more and more high school graduates from Mauban were asking scholarship grants from him, One day, he asked his finance advisers if the fiscal condition of the town could sustain the operation of a municipal college. The resounding answer was yes! With Mauban's Special Education Fund (SEF) experiencing robust growth, there will be no problem establishing a free tertiary education in Mauban.
+
+Preliminary works started in 2003. Professors from the University of the Philippines-Diliman were consulted with regard to the organizational structure, curricular offerings and human resource recruitment. After a series of seminars, meetings and interviews, faculty members and staff were hired to constitute the pioneering workforce of the college.
+
+And in June 2005, the Pambayang Kolehiyo ng Mauban started its mandate of providing low-cost quality education to the young people of Mauban. It initially offers Bachelor of Elementary Education and Bachelor of Secondary Education Major in English, Filipino, Mathematics. PKM also offered in June 2006 Programming NC Level IV and in June 2008 Computer Hardware Servicing under TESDA Programs.
+
+Government Recognition No. 02, Series of 2010 was granted in accordance with the pertinent provisions of Republic Act No. 7722, otherwise known as "Higher Education Act of 1994," and by virtue of resolution No. 153-2000, Series of 2000, of the Commission en banc to offer Bachelor of Elementary Education effective Academic Year 2009-2010.
+
+Likewise, Government Recognition No. 03, Series of 2010 was granted in accordance with the pertinent provisions of Republic Act No. 7722, otherwise known as "Higher Education Act of 1994," and by virtue of resolution No. 153-2000, Series of 2000, of the Commission en banc to offer Bachelor of Secondary Education Majors in English, Filipino, Mathematics effective Academic Year 2009-2010.
+
+For Academic Year 2011-2012, PKM offers Bachelor of Elementary Education, Bachelor of Secondary Education Major in English, Filipino, Mathematics, Programming NC Level IV, Computer Hardware Servicing NC Level II, and Agricultural Crops Production NC Level II courses.
+
+At present, PKM is occupying the two sites in conduct of its daily operation; one in Sitio Pilaway, Brgy. Polo for Education Programs and one in Brgy. Soledad for TESDA Programs.</p>
+    </section>
+    
+    
+    <section class="academics" id="academics">
+  <h1>Academic Programs Offered</h1>
+
+  <div class="program-list">
+    <div class="program">
+      <h3>Bachelor of Elementary Education</h3>
+      <p>Designed to prepare future educators for effective teaching in elementary schools. Includes both theory and practice in pedagogy.</p>
+    </div>
+
+    <div class="program">
+      <h3>Bachelor of Secondary Education</h3>
+      <p>Offered with majors in English, Filipino, and Mathematics. Focuses on developing competent high school teachers.</p>
+    </div>
+
+    <div class="program">
+      <h3>TESDA Programs</h3>
+      <ul>
+        <li>Programming NC Level IV</li>
+        <li>Computer Hardware Servicing NC Level II</li>
+        <li>Agricultural Crops Production NC Level II</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
     <section id="news">...</section>
     <section id="contact" class="contact-section">
       <h2>Contact</h2>
