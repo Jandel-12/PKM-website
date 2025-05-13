@@ -188,6 +188,7 @@
   
   .contact-section h2 {
     font-size: 35px;
+    margin: 10px;
   }
   
   .contact-section .group {
@@ -195,7 +196,7 @@
     gap: 50px;
   }
   
-  .contact-section .group .text {
+  .contact-section .group .map {
     flex: 3;
     margin-top: 20px;
   }
@@ -220,7 +221,7 @@
   .contact-section .group form button {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #2c3e50;
     background-color: var(--link-color);
     border: 1px solid black;
     height: 50px;
@@ -232,9 +233,50 @@
     filter: brightness(.9);
   }
 
+.map {
+  flex: 1 1 45%;
+  min-width: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.map iframe {
+  width: 100%;
+  height: 90%;
+  min-height: 400px;
+  border: 0;
+}
+
+.social-media {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-media p {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #014ba0; /* deep blue */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #f3c300; /* mustard yellow */
+}   
+
+
   @media (max-width: 700px)
   {
     .contact-section .group {
       flex-direction: column;
     }
+
   }
