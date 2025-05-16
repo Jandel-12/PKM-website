@@ -420,3 +420,10 @@
   background: #e9f2ff;
   border-left: 5px solid #003366;
 }
+#academis,
+#structure,
+#programs,
+#admission,
+#policies {
+  display: none;
+}
