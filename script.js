@@ -70,3 +70,26 @@ function showSection(id) {
       }
     }
   }
+
+  //
+
+  function showSection(id) {
+    // Define the sections you want to toggle
+    const sections = ['home', 'history', 'structure', 'programs', 'projects', 'admission', 'policies', 'contact'];
+
+    // Hide all sections
+    sections.forEach(sectionId => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.style.display = 'none';
+      }
+    });
+
+    // Show the selected section
+    const selected = document.getElementById(id);
+    if (selected) {
+      selected.style.display = 'block';
+    }
+  }
+
+

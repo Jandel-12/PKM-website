@@ -364,3 +364,59 @@
     }
 
   }
+
+  /* board */
+
+  .board-of-trustees {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.board-of-trustees h2,
+.board-of-trustees h3 {
+  margin-top: 1.5rem;
+  color: #004d40;
+}
+
+.board-of-trustees ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.board-of-trustees li {
+  margin-bottom: 0.4rem;
+}
+
+
+/* prohrams */
+.academics {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.academics h1 {
+  color: #003366;
+}
+
+.program-category h2, .program-highlights h2 {
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+.program-category ul, .program-highlights ul {
+  padding-left: 1.5rem;
+}
+
+.program-category ul li,
+.program-highlights ul li {
+  margin-bottom: 0.5rem;
+}
+
+.program {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e9f2ff;
+  border-left: 5px solid #003366;
+}
