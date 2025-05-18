@@ -30,66 +30,36 @@ function autoSlides() {
 }
 
 //history
-function showSection(id) {
+
+  //home
+ function showSection(id) {
+  const sections = document.querySelectorAll("section");
+
+  if (id === "home") {
+    sections.forEach(section => {
+      // Show only about, academics, contact sections
+      if (section.id === "about" || section.id === "academics" || section.id === "contact") {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  } else {
     // Hide all sections
-    const sections = document.querySelectorAll("section");
     sections.forEach(section => {
       section.style.display = "none";
     });
 
-    // Show only the selected section
+    // Show selected section
     const target = document.getElementById(id);
     if (target) {
       target.style.display = "block";
     }
   }
-
-  //home
-  function showSection(id) {
-    const sections = document.querySelectorAll("section");
-
-    if (id === "home") {
-      sections.forEach(section => {
-        // Show all except history
-        if (section.id === "history") {
-          section.style.display = "none";
-        } else {
-          section.style.display = "block";
-        }
-      });
-    } else {
-      // Hide all
-      sections.forEach(section => {
-        section.style.display = "none";
-      });
-
-      // Show selected
-      const target = document.getElementById(id);
-      if (target) {
-        target.style.display = "block";
-      }
-    }
-  }
+}
 
   //
 
-  function showSection(id) {
-    // Define the sections you want to toggle
-    const sections = ['home', 'history', 'structure', 'programs', 'projects', 'admission', 'policies', 'contact'];
 
-    // Hide all sections
-    sections.forEach(sectionId => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.style.display = 'none';
-      }
-    });
-
-    // Show the selected section
-    const selected = document.getElementById(id);
-    if (selected) {
-      selected.style.display = 'block';
-    }
-  }
 
 
